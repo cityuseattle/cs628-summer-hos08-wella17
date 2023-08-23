@@ -1,0 +1,26 @@
+GET http://localhost:5055/record
+
+###
+
+POST http://localhost:5055/record
+Content-Type: application/json
+
+{
+    "name": "John",
+    "position": "Software Engineer",
+    "level": "Intermediate"
+}
+###
+
+PATCH  http://localhost:5055/record/64e5b208f2e2e5c409b87337
+Content-Type: application/json
+
+{
+    "name": "Mary",
+    "position": "Software Engineer",
+    "level": "Intermediate"
+}
+###
+DELETE http://localhost:5055/record/64e5bcc03ed7bd04c7651460
+
+###
